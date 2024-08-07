@@ -1,0 +1,91 @@
+using System.Collections;
+using System.Collections.Generic; using UnityEngine;
+using UnityEngine.SceneManagement; public class backscript : MonoBehaviour
+{
+public GameObject creditsPanel; public GameObject creditsPanel1; public void Start()
+{
+creditsPanel.SetActive(false);
+}
+public void PlayGame()
+{
+SceneManager.LoadScene("mainmenu");
+}
+public void PlayGame1()
+{
+SceneManager.LoadScene("mainmenu");
+}
+public void PlayGame2()
+{
+SceneManager.LoadScene("mainmenu");
+}
+public void Credits()
+{
+ 
+creditsPanel.SetActive(true);
+}
+public void Credits1()
+{
+creditsPanel1.SetActive(true);
+}
+public void Back()
+{
+creditsPanel.SetActive(false);
+}
+public void Back1()
+{
+creditsPanel1.SetActive(false);
+}
+public void Back2()
+{
+creditsPanel1.SetActive(false);
+}
+public void QuitGame()
+{
+Application.Quit(); Debug.Log("QuitGame");
+}
+}
+
+
+CODE FOR MAIN MENU
+using System.Collections;
+ 
+using System.Collections.Generic; using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
+public class MainMenuScript : MonoBehaviour
+{
+public GameObject creditsPanel1; public void Playscene()
+{
+SceneManager.LoadScene("tuto");
+}
+public void Playscene1()
+{
+SceneManager.LoadScene("his");
+}
+public void Playscene2()
+{
+SceneManager.LoadScene("AR");
+}
+public void Playscene3()
+{
+SceneManager.LoadScene("AR");
+}
+public void Credits1()
+{
+creditsPanel1.SetActive(true);
+}
+ 
+public void Back()
+{
+creditsPanel1.SetActive(false);
+}
+
+
+public void QuitGame()
+{
+Application.Quit(); Debug.Log("QuitGame");
+}
+
+
+}
